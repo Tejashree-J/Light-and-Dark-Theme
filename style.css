@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+    color: #ff4321;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    flex: 1;
+    text-align: right;
+}
+
+
+.navbar ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.navbar ul li a:hover {
+    color: #ff4321;
+    cursor: pointer;
+}
+
+.info {
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1 {
+    font-size: 60px;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.info span {
+    color: #ff4321;
+}
+
+.info p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+.info a {
+    text-decoration: none;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.info a:hover {
+    color: var(--primary-color);
+    background-color: #ff4321;
+    border-color: #ff4321;
+}
+
+.img-box {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    right: 100px;
+    bottom: 0;
+}
+
+.img-box img {
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .backImg {
+    bottom: 25px;
+}
+
+.img-box:hover .girlImg {
+    left: 55%;
+}
+
+.social-icons {
+    margin-top: 70px;
+    margin-left: 8%;
+}
+
+.social-icons a {
+    padding: 7px;
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+
+.social-icons a:hover {
+    color: #ff4321;
+}
